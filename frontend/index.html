@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📘 Student Task Manager</h1>
+  <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+
+
+  <form id="taskForm">
+    <input type="text" id="title" placeholder="Task Title" required />
+    
+    <select id="category">
+      <option value="Study">Study</option>
+      <option value="Fitness">Fitness</option>
+      <option value="Hobby">Hobby</option>
+    </select>
+
+    <select id="priority">
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+
+    <input type="date" id="dueDate" required />
+
+    <button type="submit">Add Task</button>
+  </form>
+
+  <h2>Your Tasks:</h2>
+  <div id="taskList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
